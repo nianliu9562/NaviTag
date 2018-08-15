@@ -1,0 +1,60 @@
+
+.slide-left{
+
+}
+
+.daohang{
+	width: 100px;
+
+
+}
+
+.table-content{
+
+}
+
+.searchEngine{
+	border-right: 0;
+	background-color: rgba(122, 173, 226, 0.55);
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	height: 43px;
+	padding: 7px 0px;
+	font-size: 20px;
+	line-height: 1;
+	border-radius: 0px;
+	color: rgba(255,255,255,.85);
+	text-align: center;
+	border: 2px solid #ccc;
+	border-width: 0 2px 0 2px;
+	width: 106px;
+	white-space: normal;
+	vertical-align: middle;
+	/*display: table-cell;*/
+	box-sizing: border-box;
+	margin: unset;
+    transition: all linear 150ms;
+}
+
+.searchOpts{
+	border-right: unset;
+	background-color: unset;
+	border-top-right-radius: unset;
+	border-bottom-right-radius: unset;
+	height: unset;
+	padding: unset;
+	font-size: unset;
+	line-height: unset;
+	border-radius: unset;
+	color: unset;
+	text-align: unset;
+	border: unset;
+	border-width: unset;
+	width: 80px;
+	white-space: unset;
+	vertical-align: unset;
+	/*display: table-cell;*/
+	box-sizing: unset;
+}
+
+
