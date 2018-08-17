@@ -22,6 +22,7 @@
 
     <script src="http://so.zhangxingqiu.cn/so/byrwiki/assets/js/jquery-3.1.0.min.js"></script>
     <script src="http://so.zhangxingqiu.cn/so/byrwiki/assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
 
     <style type="text/css">
         body {
@@ -68,39 +69,6 @@
 
 
 <div id="outterPage" class="container">
-    <!--去除logo-->
-    <!--
-        作者：i@zhangxingqiu.cn
-        时间：2016-10-20
-        描述：仅在屏幕尺寸小于 768px 可见
-    -->
-
-    <!--<div class="visible-xs">
-        <div class="row sLOGO">
-            <div class="col-xs-6 col-xs-offset-3">
-                <a href="./index.html"><img id="LOGO" src="http://so.zhangxingqiu.cn/so/byrwiki/images/logo7.png"
-                                            alt="Responsive image"></a>
-                <br/>
-            </div>
-        </div>
-    </div>-->
-
-    <!--
-        作者：i@zhangxingqiu.cn
-        时间：2016-10-20
-        描述：仅在屏幕尺寸大于 768px 可见
-    -->
-
-    <!--<div class="hidden-xs">
-        <div class="row LOGO">
-            <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
-                <a href="./index.html"><img id="LOGO" src="http://so.zhangxingqiu.cn/so/images/caise.png"
-                                            alt="Responsive image"></a>
-
-            </div>
-        </div>
-    </div>-->
-    <br><br><br><br><br>
     <!-- 搜索条 -->
     <div class="input-group input-group-lg"
          style="width: 60%; position: absolute; left: 50%; top: 30%;transform: translate(-50%); z-index: 3;">
@@ -115,7 +83,7 @@
         </span>
             <form id="searchForm" action="http://www.baidu.com/s?wd=+" method="get" target="_blank">
                 <input type="text" class="form-control" name="search" id="search" style="width: 100%;"
-                       placeholder="先输入关键词，再选择相应的检索平台，即刻检索。默认回车为百度搜索，谷歌搜索需翻墙" baiduSug="2" value=" "
+                       baiduSug="2" value=" "
                        onkeydown='if(event.keyCode==13){gosubmit(document.getElementById("searchTop").innerText);}'>
             </form>
             <i id="searchBtn" class="iconfont icon-sousuo input-group-addon"
@@ -158,12 +126,6 @@
     <br>
     <br>
 
-    <div class="visible-xs">
-        <div class="jumbotron">
-            <p id="zhongjian">输入关键词，再点击下方相应按钮，即可检索，默认为百度搜索！<br>随时随地 Byr.Wiki 记住一个就够了！<br>推荐使用电脑访问，效果更好！<br></p>
-        </div>
-
-    </div>
     <br>
     <br>
 
@@ -189,18 +151,18 @@
         </thead>
         <tbody>
         <tr style="background: rgba(45, 43, 43, 0.43);">
-            <td align="center" id="fenlei">娱乐</td>
-            <td align="center"><a href="http://www.bilibili.com/" target="_blank" id="lianjie1">B 站</a></td>
-            <td align="center"><a href="https://www.zhihu.com/" target="_blank" id="lianjie1">知乎</a></td>
-            <td align="center"><a href="http://tieba.baidu.com/" target="_blank" id="lianjie">百度贴吧</a></td>
-            <td align="center"><a href="http://weibo.com/" target="_blank" id="lianjie">微博</a></td>
+            <td align="center" id="fenlei" >娱乐</td>
+            <td align="center" ><a href="http://www.bilibili.com/" target="_blank" id="lianjie1">B 站</a></td>
+            <td align="center" ><a href="https://www.zhihu.com/" target="_blank" id="lianjie1">知乎</a></td>
+            <td align="center" ><a href="http://tieba.baidu.com/" target="_blank" id="lianjie">百度贴吧</a></td>
+            <td align="center" ><a href="http://weibo.com/" target="_blank" id="lianjie">微博</a></td>
         </tr>
         <tr style="background: rgba(45, 43, 43, 0.43);">
-            <td align="center" id="fenlei">购物</td>
-            <td align="center"><a href="http://www.jd.com/" target="_blank" id="lianjie">京东</a></td>
-            <td align="center"><a href="https://www.tmall.com/" target="_blank" id="lianjie">天猫</a></td>
-            <td align="center"><a href="https://www.taobao.com/" target="_blank" id="lianjie">淘宝</a></td>
-            <td align="center"><a href="https://www.mi.com/" target="_blank" id="lianjie">小米商城</a></td>
+            <td align="center" id="fenlei" >购物</td>
+            <td align="center" ><a href="http://www.jd.com/" target="_blank" id="lianjie">京东</a></td>
+            <td align="center" ><a href="https://www.tmall.com/" target="_blank" id="lianjie">天猫</a></td>
+            <td align="center" ><a href="https://www.taobao.com/" target="_blank" id="lianjie">淘宝</a></td>
+            <td align="center" ><a href="https://www.mi.com/" target="_blank" id="lianjie">小米商城</a></td>
         </tr>
         <tr style="background: rgba(45, 43, 43, 0.43);">
             <td align="center" id="fenlei" rowspan="2" style="vertical-align: middle;">个人常用</td>
@@ -213,7 +175,7 @@
             <td align="center"><a href="https://www.3dmgame.com/" target="_blank" id="lianjie">3DM</a></td>
             <td align="center"><a href="http://www.zimuzu.io/" target="_blank" id="lianjie">人人影视</a></td>
             <td align="center"><a href="https://www.imooc.com/" target="_blank" id="lianjie">慕课网</a></td>
-            <td align="center"><a href="https://cloud.tencent.com/" target="_blank" id="lianjie">腾讯云</a></td>
+            <td align="center"><a href="https://www.aliyun.com/" target="_blank" id="lianjie">阿里云</a></td>
         </tr>
     </table>
 
@@ -254,7 +216,7 @@
 
 
 <!--<ul class="nav nav-tabs">-->
-<div id="footer" style="height: auto; position: absolute; bottom: 0;">
+<div id="footer" style="height: auto; position: fixed; bottom: 0;">
     <center>
         <font color="#f0f8ff">
             网站修改自GitHub项目<a href="https://github.com/byrwiki/byrwiki" target="_blank"
@@ -266,8 +228,6 @@
 <!--</ul>-->
 
 </body>
-
-
 <!--
     作者：i@zhangxingqiu.cn
     时间：2016-10-20
