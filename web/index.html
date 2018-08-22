@@ -69,7 +69,7 @@
                style="position: absolute; top: 0px;right: 2%; font-size: 29px; color: rgba(255,255,255,.85); z-index: 3"></i>
         </div>
         <div id="weatherInfo" class="info-div">
-            <iframe allowtransparency="true" frameborder="0" width="410" height="98" scrolling="no"
+            <iframe id="weatherFrame" allowtransparency="true" frameborder="0" width="410" height="98" scrolling="no" style="display: none;"
                     src="//tianqi.eastday.com/plugin/widget_v1.html?sc=1&z=1&t=1&v=0&d=2&bd=0&k=000000&f=&q=1&a=1&c=54511&w=410&h=98&align=center"></iframe>
         </div>
 
@@ -77,9 +77,11 @@
         <script>
             $("#weatherBtn").mouseover(function () {
                 $("#weatherInfo").fadeToggle(200);
+                $("#weatherFrame").fadeToggle(200);
             });
             $("#weatherBtn").mouseleave(function () {
                 $("#weatherInfo").fadeToggle(100);
+                $("#weatherFrame").fadeToggle(100);
             });
         </script>
 
